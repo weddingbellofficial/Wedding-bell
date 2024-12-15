@@ -1,0 +1,677 @@
+/* General Styling*/
+body {
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  color: #06c;
+}
+img {
+  max-width: 100%;
+}
+.wnh img {
+  width: 100%;
+  height: 50px;
+}
+.white {
+  color: #fff;
+}
+.black {
+  color: #1d1d1f;
+}
+.grey {
+  color: #86868b;
+}
+.top-50 {
+  margin-top: 65px;
+}
+/* Header Style */
+.nav-wrapper {
+  background: #fff;
+  opacity: 0.85;
+  font-size: 0.85em;
+  font-weight: 200;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.nav-wrapper ul li a {
+  color: #000;
+}
+.navbar-toggler {
+  color: #fff;
+}
+.nav-item {
+  text-align: right !important;
+  padding: 4px 0;
+  border-bottom: 1px solid #4b4b4b;
+}
+.first-hightlight-wrapper {
+  /* background-image: url("../images/home/ipodPronew-sm.jpg"); */
+  /* height: 580px;
+	background-position: bottom;
+	background-repeat: no-repeat;
+  background-size: initial; */
+  /* background-color: #fbfbfd; */
+  text-align: center;
+
+  /* padding: 65px 20px; */
+
+  margin-bottom: 30px;
+}
+/* #spotlight .spotvideo video{
+    height: 100vh;
+    width: 100%;
+    
+}
+#spotlight .spot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+/* #spotlight .spottext{
+    font-weight: bold;
+    position: absolute;
+  
+    color: white;
+	
+    bottom: 10%; 
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    z-index: 2; 
+    font-weight: bold;
+} */
+/* #spotlight{
+    position: relative;
+	width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+} */
+
+/* #spotlight .spot .spottext h2{
+
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}    */
+/* #spotlight .spottext p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+   
+    padding-top: 20px;
+    padding-bottom: 20px;
+} */
+/* General Section Styling */
+#spotlight {
+  position: relative; /* Allows absolute positioning for overlay elements */
+  width: 100%;
+  height: 100vh; /* Fullscreen height */
+  overflow: hidden; /* Ensures the video doesn't spill out */
+}
+
+/* Video Styling */
+.fullscreen-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video fully covers the container without distortion */
+  z-index: -1; /* Sends video behind text */
+  background-color: black; /* Fallback for loading or unsupported browsers */
+}
+
+/* Overlay Text Styling */
+.spot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.spottext h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.spottext p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .spottext h2 {
+    font-size: 2rem;
+  }
+  .spottext p {
+    font-size: 1rem;
+  }
+}
+
+/* Footer Styling */
+.footer-wrapper {
+  background-color: #f5f5f7;
+  color: #86868b;
+  font-size: 0.7em;
+}
+.footer-wrapper ul {
+  list-style: none;
+  padding-bottom: 10px;
+  padding-inline-start: 0px;
+}
+.footer-wrapper ul a {
+  color: #515154;
+}
+.my-apple-wrapper {
+  padding-bottom: 15px;
+  margin-top: 10px;
+}
+.copyright {
+  margin-top: 15px;
+}
+.footer-country {
+  margin-top: 8px;
+}
+.flag-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+.footer-country-name {
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer-links-terms ul {
+  display: flex;
+}
+.footer-links-terms ul li {
+  padding: 0 10px;
+  border-right: 1px solid #d2d2d7;
+}
+.footer-links-terms ul li:first-child {
+  padding-left: 0;
+}
+.footer-links-terms ul li:last-child {
+  border-right: 0;
+}
+
+.footer-links-wrapper h3 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1d1d1f;
+}
+.footer-wrapper ul li {
+  padding: 4px 0;
+}
+.upper-text-container {
+  border-bottom: 1px solid #d2d2d7;
+  padding: 17px 0 10px;
+  margin-bottom: 20px;
+}
+.upper-text-container a {
+  color: #515154;
+}
+/*Sixth Section*/
+.sixth-heghlight-wrapper .left-side-wrapper .left-side-container {
+  background-image: url("../images/home/spyder.jpg");
+  background-color: #000;
+  background-position: bottom;
+  padding-top: 35px;
+  margin: 0 0 10px 0;
+  background-size: cover;
+}
+.sixth-heghlight-wrapper .right-side-wrapper .right-side-container {
+  background-image: url("../images/home/apple-card-monthly.jpg");
+  background-color: #fbfbfd;
+  background-position: bottom;
+  padding-top: 35px;
+  margin: 0 0 10px 0;
+  background-size: auto;
+}
+
+.left-side-container {
+  min-height: 515px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.right-side-container {
+  min-height: 515px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.left-side-wrapper {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.right-side-wrapper {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.sixth-heghlight-wrapper .links-wrapper {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.links-wrapper ul {
+  list-style: none;
+}
+.product-title {
+  font-weight: 700;
+  font-size: 56px;
+}
+.brief-description {
+  font-size: 2em;
+}
+.sixth-heghlight-wrapper .description-wraper {
+  max-width: 250px;
+  margin: 7px auto;
+}
+.description-wraper.white {
+  color: white;
+}
+.links-wrapper {
+  padding: 15px 0;
+}
+.links-wrapper ul li {
+  display: inline-block;
+  padding-right: 20px;
+}
+.links-wrapper ul li a {
+  color: #06c;
+  text-decoration: none;
+  font-size: 21px;
+}
+.links-wrapper ul li a:hover {
+  color: #000;
+}
+.links-wrapper ul li a:after {
+  font-family: "FontAwesome";
+  font-weight: 900;
+  content: "\f105";
+  padding-left: 10px;
+}
+.title-wraper {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.15em;
+  letter-spacing: -0.04em;
+}
+.title-wraper.bold {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.15em;
+  letter-spacing: -0.04em;
+}
+.right-side-wrapper .title-wraper {
+  max-width: 280px;
+  margin: 0 auto;
+}
+.description-wrapper {
+  font-size: 26px;
+  padding: 10px 0;
+}
+/*Fifth Section*/
+/* .fifth-heghlight-wrapper .left-side-wrapper .left-side-container{
+	background-image:  url("../images/home/actors.jpg"); 
+	background-color: #000;
+	padding-top: 35px;
+	margin: 0 0 10px 0;
+	background-size: cover;		
+} */
+/* .fifth-heghlight-wrapper .right-side-wrapper .right-side-container{
+	background-image:  url("../images/home/watch.jpg"); 
+	background-color: #fbfbfd;
+	background-position: bottom;
+	padding-top: 35px;
+	margin: 0 0 10px 0;
+	background-size: auto;	
+} */
+.fifth-heghlight-wrapper .description-wraper {
+  max-width: 450px;
+  margin: 7px auto;
+}
+.watch-more-wrapper a {
+  text-decoration: none;
+  font-size: 0.85em;
+  color: #fff;
+}
+.watch-more-wrapper a:after {
+  font-family: "FontAwesome";
+  font-weight: 900;
+  content: "\f144";
+  padding-left: 15px;
+}
+.tvshow-logo-wraper {
+  padding: 340px 0 0px;
+}
+/* Fourth section */
+/* .fourth-heghlight-wrapper .left-side-wrapper .left-side-container{
+	background-image:  url("../images/home/iphone11-colored.jpg"); 
+	background-color: #000;
+	padding-top: 35px;
+	margin: 0 0 10px 0;
+	background-size: cover;		
+} */
+/* .fourth-heghlight-wrapper .right-side-wrapper .right-side-container{
+	background-image:  url("../images/home/apple-blue-logo.jpg"); 
+	background-color: #165ca9;
+	background-position: bottom;
+	padding-top: 35px;
+	margin: 0 0 10px 0;
+	background-size: auto;	
+} */
+.links-wrapper.white li a {
+  color: #fff;
+}
+.fourth-heghlight-wrapper .right-side-wrapper .title-wraper {
+  max-width: 380px;
+}
+/*Third section*/
+/* .third-hightlight-wrapper {
+	background-image: url("../images/home/iphone11-pro-bg.jpg");
+	height: 580px;
+	background-position: center;
+	background-repeat: no-repeat;
+  background-size: cover;
+	text-align: center;
+	padding: 65px 20px;
+	color: #fff;
+} */
+/*Second section*/
+.second-hightlight-wrapper {
+  /* background-image: url("../images/home/macbookair-new-sm.jpg"); */
+  height: 580px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: initial;
+  background-color: #fbfbfd;
+  text-align: center;
+  padding: 65px 20px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+/*First Section*/
+
+.ipod-caption {
+  color: #86868b;
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  padding-top: 310px;
+}
+/* Alert section */
+.alert-section {
+  text-align: center;
+  padding: 5px;
+}
+.alert-title {
+  font-weight: 600;
+  color: #1d1d1f;
+  padding: 10px;
+}
+.alert-text {
+  max-width: 90%;
+  margin: 0 auto;
+}
+/*Media Query*/
+/* Footer */
+@media (max-width: 768px) {
+  .footer-links-wrapper ul {
+    display: none;
+  }
+  .footer-links-wrapper h3 {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  .footer-links-wrapper h3:after {
+    font-family: "FontAwesome";
+    content: "\f067";
+    padding-left: 10px;
+    position: absolute;
+    right: 25px;
+  }
+  #spotlight {
+  }
+
+  #spotlight .spottext h2 {
+    font-size: 1.5em;
+  }
+
+  #spotlight .spottext p {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 768px) {
+  /*Nav bar*/
+
+  .nav-item {
+    text-align: center !important;
+    padding: 0;
+    border-bottom: 0px;
+  }
+  /*Footer styling*/
+  .my-apple-wrapper {
+    border-bottom: 1px solid #d2d2d7;
+  }
+  /*Sixth section*/
+  .sixth-heghlight-wrapper .left-side-wrapper .left-side-container {
+    margin: 5px 5px 10px 10px;
+  }
+  .sixth-heghlight-wrapper .right-side-wrapper .right-side-container {
+    margin: 5px 10px 10px 5px;
+  }
+  .sixth-heghlight-wrapper .links-wrapper {
+    max-width: 500px;
+  }
+  /*Fifth section*/
+  .fifth-heghlight-wrapper .left-side-wrapper .left-side-container {
+    margin: 5px 5px 5px 10px;
+  }
+  .fifth-heghlight-wrapper .right-side-wrapper .right-side-container {
+    margin: 5px 10px 5px 5px;
+  }
+  /*fourth section*/
+  .fourth-heghlight-wrapper .left-side-wrapper .left-side-container {
+    margin: 10px 5px 5px 10px;
+  }
+  .fourth-heghlight-wrapper .right-side-wrapper .right-side-container {
+    margin: 10px 10px 5px 5px;
+  }
+  .title-wraper.bold {
+    font-size: 56px;
+  }
+  /* Second section */
+  .second-hightlight-wrapper {
+    /* min-height: 692px;
+		background-image: url("../images/home/macbookair-new.jpg"); */
+  }
+  .new-alert {
+    color: #bf4801;
+    font-size: 18px;
+  }
+  /* First section */
+  .first-hightlight-wrapper {
+    /* background-image: url("../images/home/ipodPronew.jpg");
+		min-height: 692px; */
+  }
+  .ipod-caption {
+    padding-top: 415px;
+  }
+  /*Alert section*/
+  .alert-text {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 992px) {
+  /*Footer styling*/
+  .copyright {
+    margin-top: 10px;
+  }
+  .footer-country {
+    margin-top: 10px;
+  }
+  .footer-links-terms {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .bb {
+    display: none;
+  }
+}
+.aa {
+  opacity: 0.65;
+}
+
+.home {
+  /* background: rgb(189,185,185);
+background: linear-gradient(156deg, rgba(189,185,185,1) 0%, rgba(38,40,59,1) 100%); */
+}
+
+/* Fixed dimensions for all images in cards and carousels */
+.card-img-top,
+.carousel-inner img {
+  width: 100%; /* Ensure the image stretches across its container */
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image fills the dimensions without distortion */
+  border-radius: 8px; /* Optional: adds a slight border-radius for aesthetics */
+}
+
+.card {
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth effect */
+  cursor: pointer;
+}
+
+.card:hover,
+.card.hover-active {
+  transform: scale(1.05); /* Slightly enlarges the card */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+  background-color: rgba(245, 245, 245, 0.9); /* Subtle background change */
+}
+
+.hero1 {
+  background-image: url("https://elainewilliamsphoto.com/wp-content/uploads/2023/03/insole-court-wedding-025.jpg");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 4em;
+}
+
+.hero2 {
+  background-image: url("https://assets.vogue.in/photos/5ce424d02e615019d80b0184/master/pass/history-of-bridal-mehandi.jpg");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 4em;
+}
+.hero3 {
+  background-image: url("https://www.weddingbee.com/wp-content/uploads/2018/09/photographer1-388919.png");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 4em;
+  opacity: 0.85;
+}
+.hero4 {
+  background-image: url("https://eventsmanagementkerala.com/wp-content/uploads/2023/06/2021-04-08-6491754e86566-1024x576.webp");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 4em;
+  opacity: 0.85;
+}
+
+.hero5 {
+  background-image: url("https://www.angroos.com/wp-content/uploads/2024/11/Wedding-Gifts.jpg");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 4em;
+  opacity: 0.85;
+}
+
+.hero6 {
+  background-image: url("https://insightcosmetics.in/cdn/shop/articles/Indian_Bridal_Feature_Image_4.png?v=1721217279");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 4em;
+  opacity: 0.85;
+}
+.hero7 {
+  background-image: url("https://cdn.prod.website-files.com/63e87128037f3b08cdcab7bd/672eda639ab7d55f18a4dd35_A%20wedding%20venue%20with%20professional%20DJ%20equipment%20set%20up..webp");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 4em;
+  opacity: 0.85;
+}
+
+.hero8 {
+  background-image: url("https://cdn.vox-cdn.com/thumbor/VKNVLQ30pIR26UQtUs1pcWLFnTk=/0x0:6247x4165/1200x675/filters:focal(2625x1584:3623x2582)/cdn.vox-cdn.com/uploads/chorus_image/image/72173588/Eater_WeddingTrends_Lede.7.jpg");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 4em;
+  opacity: 0.85;
+}
+.hero9 {
+  background-image: url("https://mersadiolson.com/wp-content/uploads/sites/10998/2023/06/04_beach-house-wedding-mersadi-olson-71.jpg");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 4em;
+  opacity: 0.85;
+}
+.hero10 {
+  background-image: url("https://image.wedmegood.com/resized/720X/uploads/member/1665664/1618646735_WhatsApp_Image_2021_04_17_at_1.32.19_PM__1_.jpeg");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 4em;
+  opacity: 0.85;
+}
+
+.hero11 {
+  background-image: url("https://res.cloudinary.com/purnesh/image/upload/f_auto/v1614854089/quickly1.jpg");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 4em;
+  opacity: 0.85;
+}
+
+.hero12 {
+  background-image: url("https://zowed.com/blog/wp-content/uploads/2019/07/67313910_1129729227219249_8957338068868661248_o-1024x683.jpg");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 4em;
+  opacity: 0.85;
+}
