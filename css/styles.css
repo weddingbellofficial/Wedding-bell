@@ -537,9 +537,11 @@ img {
   opacity: 0.65;
 }
 
-.home {
-  /* background: rgb(189,185,185);
-background: linear-gradient(156deg, rgba(189,185,185,1) 0%, rgba(38,40,59,1) 100%); */
+.third-hightlight-wrapper {
+  background-image: url("https://images.ctfassets.net/co0pvta7hzrh/5Twrf0CXqy7bwkqgwwH5Ka/5e8d46a45ac166ad6434d129ae557f40/professional-development-workshop-registration-form-thumbnail.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Fixed dimensions for all images in cards and carousels */
